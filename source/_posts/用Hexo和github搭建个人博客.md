@@ -28,7 +28,7 @@ hexo是基于node.js的，所以我们需要用到npm（node package manager)---
 
 安装完成后，打开cmd终端，测试是否安装成功
 
-```shell
+```cmd
 # 显示版本号就对了，我这里重启电脑一次才可以
 node -v
 npm -v
@@ -36,7 +36,7 @@ npm -v
 
 ##### hexo
 
-```shell
+```cmd
 npm install hexo-cli -g
 ```
 
@@ -51,7 +51,7 @@ hexo -v
 
 查看是否安装成功
 
-```
+```cmd
 git --version
 ```
 
@@ -62,37 +62,37 @@ git --version
 
 安装nodejs,npm和git
 
-```
+```shell
 sudo pacman -S nodejs npm git
 ```
 
 通过查看node版本来验证是否安装成功
 
-```
+```shell
 node -v
 ```
 
 通过查看npm版本来验证是否安装成功
 
-```
+```shell
 npm -v
 ```
 
 通过查看git版本,来验证是否安装成功
 
-```
+```shell
 git --version
 ```
 
 
 安装hexo
 
-```
+```shell
 sudo npm install hexo-cli -g
 ```
 通过查看hexo版本，来验证是否安装成功
 
-```
+```shell
 hexo -v
 ```
 
@@ -105,7 +105,7 @@ hexo -v
 
 ### 2.2.2、部署到本地
 
-```
+```shell
 # 远程仓库克隆到本地
 git clone 仓库地址
 # 安装依赖
@@ -122,7 +122,7 @@ hexo s
 
 下载下来的目录
 
-```
+```shell
 .
 ..
 _config.landscape.yml
@@ -139,7 +139,7 @@ themes
 
 安装完依赖会多出node_modules目录
 
-```
+```shell
 .
 ..
 _config.landscape.yml
@@ -156,7 +156,7 @@ themes
 
 hexo g 之后多了db.json package-lock.json public
 
-```
+```shell
 .
 ..
 _config.landscape.yml
@@ -177,7 +177,7 @@ themes
 
 ## 3、写文章并上传
 
-```
+```shell
 # 创建新文章，默认在source/_post目录下
 hexo new 文章名
 # 清除缓存，也就是删掉public目录
@@ -190,6 +190,12 @@ hexo s
 # 上传github
 # 等价于hexo deploy
 # 第一次需要浏览器验证，或者token验证，我选择浏览器验证
+# hexo d会生成页面并推送到main分支，这个是根据配置
 hexo d
+
+# 上传源文件，第一次要
+# --set-upstream 等价于 -u，关联远程的分支
+git push --set-upstream origin hexo
+#以后只用git push就可以了
 ```
 
