@@ -17,7 +17,7 @@ Hexo的主题有很多，据说Next主题不错但是加载比较慢，这里就
 
 ```shell
 git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
-# 删除themes/butterfly目录里面的.git目录
+# 删除themes/butterfly目录里面的.git目录，我不想提交子仓库，暂时直接删掉
 ```
 修改hexo的配置文件_config.yml，将主题改成butterfly
 
@@ -31,11 +31,17 @@ theme: butterfly
 hexo clean
 hexo g
 hexo s
+# 本地查看
 ```
 如果出现报错extends includes/layout.pug block content include ./includes/mixins/post-ui，尝试安装下面两个包
 
 ```shell
 npm install hexo-renderer-pug hexo-renderer-stylus
+# 重新启动项目
+hexo clean
+hexo g
+hexo s
+# 本地查看
 ```
 
 
