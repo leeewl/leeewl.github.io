@@ -180,6 +180,8 @@ themes
 ```shell
 # 创建新文章，默认在source/_post目录下
 hexo new 文章名
+# 创建新文章的草稿，默认在source/_drafts目录下
+hexo new draft 文章名
 # 清除缓存，也就是删掉public目录
 # 只在一台电脑上应该不需要这样
 hexo clean
