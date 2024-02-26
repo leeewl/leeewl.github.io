@@ -3,9 +3,9 @@ title: ArchLinux上我常用的软件
 tags:
 ---
 
-## clash
+## clash for windows
 
-这软件嘛，是用来翻越网络屏障的，windows,linux,android，mac都能免费用,iphone要美版帐号付费购买。在github上有[项目](https://github.com/Dreamacro/clash/releases)，根据cpu不同下载.tar.gz后缀的压缩包，intel下载clash-linux-386....,AMD下载clash-linux-amd64...,然后解压:
+这软件嘛，是用来翻越网络屏障的，windows,linux,android，mac都能免费用,iphone要美版帐号付费购买。在github上有[项目](https://github.com/Fndroid/clash_for_windows_pkg/releases)，根据cpu不同下载.tar.gz后缀的压缩包，intel下载clash-linux-386....,AMD下载clash-linux-amd64...,然后解压:
 
 ```shell
 # 解压到当前目录了
